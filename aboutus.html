@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8ede3;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #0d1117;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .logo .highlight {
+      color: #4c6af1;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 15px;
+    }
+
+    .nav-links a:hover {
+      color: #0d1117;
+      background-color: #1c3fdd;
+      padding: 5px 15px;
+      border-radius: 20px;
+    }
+
+.about-us {
+  padding: 50px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #6c63ff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.feature {
+  width: 300px;
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+}
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+          <span>Wanderlust</span><span class="highlight">Chronicles</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+      </nav>
+
+  <div class="about-us">
+    <div class="container">
+      <h1>About <span>Us</span></h1>
+      <p>
+        Welcome to <strong>Wanderlust Chronicles</strong> — your ultimate guide to exploring the world! We’re a team of passionate travelers, storytellers, and adventure-seekers dedicated to helping you discover amazing destinations, plan memorable trips, and travel smarter.
+      </p>
+      <p>
+        Our mission is to inspire people to embrace the joy of travel, connect with new cultures, and create experiences that last a lifetime. From hidden gems to iconic landmarks, we bring you tips, guides, and resources to make your journey unforgettable.
+      </p>
+      <div class="about-features">
+        <div class="feature">
+          <img src="./images/explore.jpg" alt="Explore">
+          <h3>Explore</h3>
+          <p>Dive into curated travel guides, local tips, and off-the-beaten-path adventures.</p>
+        </div>
+        <div class="feature">
+          <img src="./images/plan.jpg" alt="Plan">
+          <h3>Plan</h3>
+          <p>Find practical advice on budgeting, itineraries, and sustainable travel.</p>
+        </div>
+        <div class="feature">
+          <img src="./images/experience.jpg" alt="Experience">
+          <h3>Experience</h3>
+          <p>Immerse yourself in unique experiences that celebrate the beauty of our world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

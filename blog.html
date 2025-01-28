@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;  
+      background-color: #f8ede3;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #0d1117;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .logo .highlight {
+      color: #4c6af1;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 15px;
+    }
+
+    .nav-links a:hover {
+      color: #0d1117;
+      background-color: #1c3fdd;
+      padding: 5px 15px;
+      border-radius: 20px;
+    }
+
+    h1{
+      text-align: center;
+      padding:2%;
+    }
+
+    .container {
+        display: flex;
+        text-align: center;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .item {
+        width: 45%;
+        margin: 20px 0;
+    }
+    .item iframe {
+        width: 100%;
+        height: 315px;
+        border-radius: 20px;
+    }
+    .text {
+        color:#0d1117;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .description {
+        color:#0d1117;
+        font-size: 16px;
+    }
+    @media (max-width: 768px) {
+        .item {
+            width: 100%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <span>Wanderlust</span><span class="highlight">Chronicles</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+      </nav>
+
+      <h1>Blogs</h1>
+
+      <div class="container">
+
+        <div class="item">
+          <iframe
+              src="https://www.youtube.com/embed/ti39UJYgc5s?mute=1&autoplay=0&controls=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+      <div class="item">
+          <div class="text">
+            God’s Own Canvas: A Journey Through the Serene Backwaters and Lush Landscapes of Kerala
+          </div>
+          <div class="description">
+            Kerala, known as "God’s Own Country," is a land of lush green landscapes, serene backwaters, and vibrant culture. My journey began with the sway of palm trees, the soothing gurgle of backwaters, and the spicy aroma of cardamom and cloves. Everywhere I looked, nature’s beauty and the warmth of the locals welcomed me. From the vibrant colors of traditional life to the calming rhythms of Kerala’s timeless traditions, every moment was a sensory delight. It was an experience of pure tranquility, adventure, and unforgettable charm.
+          </div>
+      </div>
+      
+        <div class="item">
+            <div class="text">Whispers of the White Desert: A Kutch Odyssey</div>
+            <div class="description">
+              Journey to the mesmerizing Rann of Kutch, where endless salt flats shimmer under the moonlight. Immerse yourself in the vibrant hues of the Rann Utsav, a cultural kaleidoscope of folk dances, music, and handcrafted treasures. Wander through the historic Bhuj streets, savoring Kutchi dabeli and exploring intricate mirror-work textiles. Experience the solitude of the majestic Mandvi beach and the resilience of the ancient Dholavira ruins. Whether it’s camping under a starlit sky or connecting with the local artisans, Kutch offers a tapestry of unforgettable adventures. Let the white desert tell its timeless tale.
+            </div>
+        </div>
+        <div class="item">
+          <iframe
+          src="https://www.youtube.com/embed/ROgPMyNEIMI?mute=1&autoplay=0&controls=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="item">
+          <iframe
+              src="https://www.youtube.com/embed/U1EwsP7SkC0?mute=1&autoplay=0&controls=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+      </div>
+      <div class="item">
+          <div class="text">Paradise Unveiled: Tales from Kashmir</div>
+          <div class="description">
+            Discover the timeless beauty of Kashmir, where snow-capped peaks embrace emerald valleys. Glide on a shikara over Dal Lake, surrounded by floating gardens and vibrant markets. Wander through the Mughal Gardens, fragrant with tulips and chinar trees. Relish the flavors of Kashmiri wazwan and steaming kahwa. Soak in the serenity of Gulmarg’s snowy slopes or the vibrant saffron fields of Pampore. From trekking in Pahalgam to strolling through the meadows of Sonmarg, every moment feels like a dream. Kashmir isn’t just a destination; it’s poetry etched in nature’s finest hues.
+          </div>
+      </div>
+      <div class="item">
+          <div class="text">Manali: Where Adventure Meets Serenity</div>
+          <div class="description">
+            Nestled in the lap of the Himalayas, Manali is a blend of adventure and tranquility. Stroll through Old Manali’s rustic charm, dotted with quaint cafes and vibrant markets. Thrill-seekers can raft down the Beas River or paraglide over Solang Valley’s breathtaking landscapes. Explore the enchanting Hidimba Temple and the snow-covered Rohtang Pass for picture-perfect vistas. Relax in the natural hot springs of Vashisht or lose yourself in the serene beauty of the pine forests. From cozy bonfires to adrenaline-pumping escapades, Manali promises a storybook escape in every season.
+          </div>
+      </div>
+      <div class="item">
+        <iframe
+        src="https://www.youtube.com/embed/YkFsf-vaLkI?mute=1&autoplay=0&controls=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+      </div>
+   
+    
+    </div>
+
+
+</body>
+</html>

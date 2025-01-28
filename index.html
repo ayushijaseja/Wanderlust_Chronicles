@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <span>Wanderlust</span><span class="highlight">Chronicles</span>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      &#9776;
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="destination.html">Destination</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+    </ul>
+  </nav>
+
+  <div class="header">
+    <div class="overlay">
+  <h1>Wanderlust Chronicles</h1>
+  <h3>Reasons for Choosing US</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+    <br>
+    <button>READ MORE</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="intro">
+       <div class="intro-text">
+        <h1>
+          Welcome to Wanderlust Chronicles!
+        </h1>
+        <p>
+          Your ultimate guide to exploring the world, one destination at a time. Whether you're a seasoned traveler or planning your first big adventure, we’re here to inspire, inform, and ignite your wanderlust! 
+          Discover hidden gems, practical travel tips, breathtaking destinations, and heartwarming stories that will fuel your passion for exploring.<br> From budget-friendly itineraries to luxury escapes, we’ve got everything you need to make your journey unforgettable. <br>Let’s turn dreams into itineraries, and adventures into lifelong memories. Ready to embark on your next journey? Start exploring now and let the chronicles begin! Adventure awaits. Where will your wanderlust take you today?
+        </p>
+       </div>
+       <div class="intro-image">
+        <div class="book-section">
+         <h2>
+          WANDERLUST CHRONICLES
+         </h2>
+         <p>
+          The ultimate guide to exploring the world, one destination at a time.
+         </p>
+         <div class="images">
+          <img src="./images/ayushi.jpg"/>
+          <img src="./images/suvanwita.jpg"/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="quote-section">
+       <p id="quote"></p>
+      </div>
+     </div>
+
+
+     <h2>Favourite Destinations</h2>
+     <div class="container1">     
+      <div class="card1">
+        <img src="./images/slowtravel.jpg" alt="Slow Travel">
+        <div class="overlay1">SLOW TRAVEL</div>
+        <button class="button1" onclick="changeColor(this)">Click Me</button>
+      </div>
+      <div class="card1">
+        <img src="./images/pexels-enricoperini-705423.jpg" alt="Living Culture">
+        <div class="overlay1">LIVING CULTURE</div>
+        <button class="button1" onclick="changeColor(this)">Click Me</button>
+      </div>
+      <div class="card1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbP8GiTae5BWWMhg2YGYB3o9Zz2jPJHbtrTiDVreMUBp55LcCyClJ_o_IERrmGOdRAuA&usqp=CAU" alt="Land Journeys" style="transform: scale(1.5);">
+        <div class="overlay1">LAND JOURNEYS</div>
+        <button class="button1" onclick="changeColor(this)">Click Me</button>
+      </div>
+      <div class="card1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlR2upPou-XusWZlGs5UGrK8YcOLZ_-4HTzg&s" alt="Solo Travel">
+        <div class="overlay1">SOLO TRAVEL</div>
+        <button class="button1" onclick="changeColor(this)">Click Me</button>
+      </div>
+      <div class="card1">
+        <img src="https://images.squarespace-cdn.com/content/v1/58816a6de6f2e1da63d50a3d/1523776266639-76XDKTWVB7PQ9IRTS4ZY/cafe901-jeju-veganism-korea-food-travel.JPG" alt="Vegan Food">
+        <div class="overlay1">VEGAN FOOD</div>
+        <button class="button1" onclick="changeColor(this)">Click Me</button>
+      </div>
+      <div class="card1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0oGtWBEAbh5lYY7Bh8wcb4gPKULLvkQdJUA&s" alt="Digital Nomad Life">
+        <div class="overlay1">DIGITAL NOMAD LIFE</div>
+        <button class="button1" onclick="changeColor(this)">Click Me</button>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <span>Copyright © 2024 All Rights Reserved</span>
+        <span class="link">
+            <a href="contactus.html">Contact Us</a>
+        </span>
+      </div>
+    </footer>
+
+
+    <script>
+        const quotes = [
+            "Travel is the only thing you buy that makes you richer.",
+            "The journey not the arrival matters.",
+            "To travel is to live.",
+            "Life is either a daring adventure or nothing at all.",
+            "We travel not to escape life, but for life not to escape us.",
+            "Adventure may hurt you, but monotony will kill you.",
+            "Traveling – it leaves you speechless, then turns you into a storyteller.",
+            "Not all those who wander are lost.",
+            "Take only memories, leave only footprints.",
+            "The world is a book, and those who do not travel read only one page."
+        ];
+
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').innerText = quotes[randomIndex];
+        }
+
+        // Display a quote immediately
+        getRandomQuote();
+
+        // Change quote every 4 seconds
+        setInterval(getRandomQuote, 4000);
+    </script>
+
+    
+</body>
+</html>
+
+
+
+
+
+

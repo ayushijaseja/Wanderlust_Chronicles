@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog FAQs</title>
+  <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8ede3;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #0d1117;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .logo .highlight {
+      color: #4c6af1;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 15px;
+    }
+
+    .nav-links a:hover {
+      color: #0d1117;
+      background-color: #1c3fdd;
+      padding: 5px 15px;
+      border-radius: 20px;
+    }
+
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+
+h1 span {
+  color: #6c63ff;
+}
+
+.faq-section {
+  margin-top: 30px;
+}
+
+.faq-section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.faq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  background-color: #6c63ff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+          <span>Wanderlust</span><span class="highlight">Chronicles</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </nav>
+
+  <div class="faq-container">
+    <h1>
+      Frequently Asked <span>Questions</span>
+    </h1>
+
+    <div class="faq-section">
+      <h2>General</h2>
+      <div class="faq-item">
+        <div class="icon">?</div>
+        <div class="content">
+          <h3>How can I find cheap flights?</h3>
+          <p>Use flight comparison websites like Skyscanner or Google Flights, book early, and be flexible with your dates.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="icon">?</div>
+        <div class="content">
+          <h3>What should I pack for a trip?</h3>
+          <p>Pack light, use packing cubes, and focus on versatile clothing items. Don’t forget essentials (like toiletries, documents)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section">
+      <h2>Budget Travel</h2>
+      <div class="faq-item">
+        <div class="icon">?</div>
+        <div class="content">
+          <h3>How can I save on accommodation?</h3>
+          <p>Consider hostels, budget hotels, or vacation rentals, and book during the off-season for better deals.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="icon">?</div>
+        <div class="content">
+          <h3>Is it possible to travel on a tight budget?</h3>
+          <p>Yes! Opt for local street food, use public transportation, and look for free activities in the area.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section">
+        <h2>Travel Logistics</h2>
+        <div class="faq-item">
+          <div class="icon">?</div>
+          <div class="content">
+            <h3>How do I avoid jet lag?</h3>
+            <p>Adjust sleep schedule before trip. Stay hydrated & avoid caffeine or alcohol. Get exposure to sunlight upon arrival.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="icon">?</div>
+          <div class="content">
+            <h3>How do I get a visa for my trip?</h3>
+            <p>Check destination’s embassy website for visa needs. Apply well in advance and ensure passport has enough validity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h2>Cultural and Experiential</h2>
+        <div class="faq-item">
+          <div class="icon">?</div>
+          <div class="content">
+            <h3>How can I learn about the culture of the place I’m visiting?</h3>
+            <p>Interact with locals, join cultural tours, and attend local events. Read about the history and traditions beforehand.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="icon">?</div>
+          <div class="content">
+            <h3>How do I handle language barriers while traveling?</h3>
+            <p>Learn basic phrases of the local language. Use translation apps like Google Translate. Use gestures and visuals.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</body>
+</html>
